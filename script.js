@@ -27,7 +27,13 @@ function createPassword(){
 
 function copyPassword() {
     passwordBox.select();
-    document.execCommand("copy");
+    navigator.clipboard.writeText(passwordBox.value)
+        .then(() => {
+            alert("Password copied to clipboard!");
+        })
+        .catch(err => {
+            console.error("Failed to copy text: ", err);
+        });
 }
 
 
