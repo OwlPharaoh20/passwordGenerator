@@ -48,7 +48,7 @@ body {
     border: 0;
     outline: 0;
     font-size: 24px;
-    width: 80%; /* Added width to make input responsive */
+    width: 80%; /* Adjust this width if needed */
 }
 
 .container button img {
@@ -88,7 +88,7 @@ body {
 
     .display input {
         font-size: 18px;
-        width: 70%; /* Adjusted width for mobile */
+        width: calc(100% - 40px); /* Adjusted width to consider padding and spacing */
     }
 
     .display img {
